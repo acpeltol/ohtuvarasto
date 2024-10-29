@@ -51,6 +51,8 @@ class TestVarasto(unittest.TestCase):
 
         self.assertAlmostEqual(ahuio.saldo, 0)
 
+        ##holio alholio
+
     def test_tilavuus_lisäys_on_negatiivinen(self):
 
         ahuio = Varasto(10, 0)

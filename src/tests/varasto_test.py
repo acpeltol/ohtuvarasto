@@ -57,6 +57,8 @@ class TestVarasto(unittest.TestCase):
         
         ahuio.lisaa_varastoon(-2)
 
+        self.assertAlmostEqual(ahuio.tilavuus, 11)
+
     def test_tilavuus_lisäys_on_pienmpää_kuin_paljonkomahtuu(self):
 
         ahuio = Varasto(10)

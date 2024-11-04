@@ -1,9 +1,6 @@
 from varasto import Varasto
 
-
-def main():
-    mehua = Varasto(100.0)
-    olutta = Varasto(100.0, 20.2)
+def fits_print(mehua, olutta):
 
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
@@ -16,6 +13,9 @@ def main():
 
     print("Mehu setterit:")
     print("Lisätään 50.7")
+
+def second_print(mehua, olutta):
+
     mehua.lisaa_varastoon(50.7)
     print(f"Mehuvarasto: {mehua}")
     print("Otetaan 3.14")
@@ -30,6 +30,10 @@ def main():
     print("Varasto(100.0, -50.7)")
     huono = Varasto(100.0, -50.7)
     print(huono)
+
+    return mehua, olutta
+
+def third_print(mehua, olutta):
 
     print(f"Olutvarasto: {olutta}")
     print("olutta.lisaa_varastoon(1000.0)")
@@ -46,6 +50,21 @@ def main():
     saatiin = olutta.ota_varastosta(1000.0)
     print(f"saatiin {saatiin}")
     print(f"Olutvarasto: {olutta}")
+
+
+    return mehua, olutta
+
+
+def main():
+    mehua = Varasto(100.0)
+    olutta = Varasto(100.0, 20.2)
+
+    fits_print(mehua, olutta)
+
+    mehua,olutta = second_print(mehua,olutta)
+
+    mehua, olutta = third_print(mehua,olutta)
+
 
     print(f"Mehuvarasto: {mehua}")
     print("mehua.otaVarastosta(-32.9)")

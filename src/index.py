@@ -65,6 +65,8 @@ def main():
 
     mehua, olutta = third_print(mehua,olutta)
 
+    print("hhahahhahahhahhhahahhahaahaahahahahahahahhaahhahaahhahahhaahahahahahahahahahahahahhahahhahahahahahahahahahahahhahahhahahahahahahah")
+
 
     print(f"Mehuvarasto: {mehua}")
     print("mehua.otaVarastosta(-32.9)")
